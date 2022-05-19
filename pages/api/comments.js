@@ -10,7 +10,7 @@ const graphcmsToken=process.env.GRAPHCMS_TOKEN;
 
 // export a default function for API route to work
 export default async function comments(req, res) {
-  console.log({graphcmsToken});
+  //console.log({graphcmsToken});
   const graphQLClient = new GraphQLClient((graphqlAPI), {
     headers: {
       authorization: `Bearer ${graphcmsToken}`,
